@@ -18,9 +18,9 @@ COMPILE-SWITCHES = -Wall -O2 -g -fbounds-check
 
 BGKint : *.f $(ACCISLIB)
 
-accis :
+accis/pltinit.f :
 	git submodule init
 	git submodule update
 
-$(ACCISLIB) : makefile accis accis/pltinitb.f
+$(ACCISLIB) : makefile accis/pltinit.f
 	make -C accis
