@@ -1,0 +1,14 @@
+This code solves and plots the distribution for an electron hole
+
+It should compile on any linux box with gfortran and C compilers,
+provided the X11 development packages are installed.
+	 $ make
+
+A version can be compiled with JUST gfortran by
+  	 $ make noX
+which will not give graphics output except with Xterm and even that's messy.
+But it will create the graphics output files.
+
+Run by
+	$ ./BGKint
+Just hit return to progress through the plots.
